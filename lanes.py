@@ -39,20 +39,13 @@ def show_polygon_in_lane_pic(image):
     return mask
 
 def remove_all_outside_region_of_car_lane(image):
-    # gets the bottom of the image (max # - just show image to see)
-    height = image.shape[0]
-    # array of triangles
-    # each triangle array [point A, point B, point C]
-    # the non-height numbers were just eye-balled using the plot
-    polygons = np.array([
-    [(200, height), (1100, height), (550, 250)]
-    ])
-    # blacken everything in image
-    mask = np.zeros_like(image)
-    # take black image and place a polygon inside, fill everything in the poly with color 255
-    cv2.fillPoly(mask, polygons, 255)
-    #
-    masked_image = cv2.bitwise_and(image, mask)
+    # get the polygon on black image
+    polygon_mask_image = show_polygon_in_lane_pic(image)
+    # overlay ^^ into originall via bitwise
+    # aka black + black = black (1 && 1 = 1)
+    #     white + black = balck (0 && 1 = 1)
+    #     white + white = white (0 && 0 = 0)
+    masked_image = cv2.bitwise_and(image, polygon_mask_image)
     return masked_image
 
 # reads the image & returns a multidimension array
