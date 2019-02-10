@@ -5,8 +5,6 @@ my computer: mac osx
 
 python version: python 3 anaconda
 
-commands:
-
 [on bash/terminal] `pip install opencv-contrib-python`
 
 [on bash/terminal] `python lanes.py`
