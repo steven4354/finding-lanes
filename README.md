@@ -6,7 +6,9 @@ my computer: mac osx
 python version: python 3 anaconda
 
 commands:
+
 `pip install opencv-contrib-python`
+
 `python lanes.py`
 
 # demonstration
