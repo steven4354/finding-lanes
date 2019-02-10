@@ -7,9 +7,9 @@ python version: python 3 anaconda
 
 commands:
 
-`pip install opencv-contrib-python`
+[on bash/terminal] `pip install opencv-contrib-python`
 
-`python lanes.py`
+[on bash/terminal] `python lanes.py`
 
 # demonstration
 
