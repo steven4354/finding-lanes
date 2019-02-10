@@ -9,3 +9,6 @@ download python 3 anaconda
 # demonstration
 
 ![alt text](./images/first.png)
+![alt text](./images/second.png)
+![alt text](./images/third.png)
+![alt text](./images/fourth.png)
