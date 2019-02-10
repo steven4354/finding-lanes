@@ -1,10 +1,11 @@
 
-# setup 
-(my computer: mac osx)
+# setup
 
-download python 3 anaconda
-
+my computer: mac osx
+python version: python 3 anaconda
+commands:
 `pip install opencv-contrib-python`
+`python lanes.py`
 
 # demonstration
 
