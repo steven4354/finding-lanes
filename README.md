@@ -8,4 +8,4 @@ download python 3 anaconda
 
 # demonstration
 
-![alt text](https://ibb.co/wC2WDh3)
+![alt text](./images/first.png)
